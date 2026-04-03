@@ -31,7 +31,7 @@ let draggingNote = null; // Tracks the note we are currently stretching
 
 function preload() {
     // Load your audio file here
-    song = loadSound('../charts/Test/tetoPearCalc.mp3');
+    song = loadSound('../charts/tetoPearCalc/tetoPearCalc.mp3');
     click = loadSound('../click.wav')
 }
 
@@ -56,6 +56,10 @@ function setup() {
             });
         }
     });
+
+    slider.oninput = function() {
+        sensitivity.innerText = "Sensitivity: " + this.value;
+    }
 }
 
 function draw() {
@@ -274,8 +278,4 @@ function keyPressed() {
         saveJSON(finalChart, 'test.json');
         console.log("Chart Saved!");
     }
-}
-
-slider.oninput = function() {
-    sensitivity.innerText = "Sensitivity: " + this.value;
 }

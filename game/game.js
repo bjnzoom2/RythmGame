@@ -22,6 +22,7 @@ var song;
 var img;
 
 var start = false;
+var songEnd = false;
 
 const KeyTypes = {
     LEFT : 0, 
@@ -250,9 +251,9 @@ class AccuracyText {
 }
 
 function preload() {
-    chart = loadJSON('../charts/Test/chart.json'); 
-    song = loadSound('../charts/Test/tetoPearCalc.mp3');
-    img = loadImage('../charts/Test/tetoPearCalc.jpg');
+    chart = loadJSON('../charts/tetoPearCalc/chart.json'); 
+    song = loadSound('../charts/tetoPearCalc/tetoPearCalc.mp3');
+    img = loadImage('../charts/tetoPearCalc/tetoPearCalc.jpg');
 }
 
 function setup() {
@@ -277,19 +278,21 @@ function setup() {
         var note = new Note("#fff", 50, speed, time, keytype, notetype, holdDur);
         notes.push(note);
     }
+
+    song.onended(function() {
+        songEnd = true;
+    });
 }
 
 function draw() {
     background("#fff");
-    if (!song.isPlaying() && start) {
+    if (!song.isPlaying() && start && !songEnd) {
         song.play();
     }
 
-    if (song.currentTime > 0) {
-        timeElapsed = song.currentTime * 1000; 
+    if (song.isPlaying()) {
+        timeElapsed = song.currentTime() * 1000; 
     }
-
-    if (song.isPlaying()) timeElapsed += deltaTime;
 
     image(img, 0, 0, 600, 600);
 
@@ -303,12 +306,28 @@ function draw() {
     fill(0, 0, 0, 75);
     rect(150, -1, 300, 601);
 
+    let fps = frameRate();
+    textSize(16);
+    textAlign(RIGHT, TOP);
+    stroke("#000");
+    fill("#fff");
+    text("FPS: " + Math.floor(fps), 592, 16);
+
     if (!start) {
         textSize(32);
         textAlign(CENTER, CENTER);
         stroke("#000");
         fill("#fff");
         text("Press 1 to start", 300, 300);
+    }
+
+    if (songEnd) {
+        textSize(32);
+        textAlign(CENTER, CENTER);
+        stroke("#000");
+        fill("#fff");
+        text("Finished", 300, 280);
+        text("Score: " + score, 300, 320);
     }
 
     for (var i = 0; i < keys.length; i++) {
