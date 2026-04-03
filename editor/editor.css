@@ -1,0 +1,46 @@
+p {
+    font-size: 16px;
+}
+body { 
+    margin: 0; padding: 0; display: flex; justify-content: center; background-color: #222; color: white; font-family: sans-serif;
+}
+canvas { 
+    display: block; margin-top: 20px; box-shadow: 0px 0px 10px rgba(0,0,0,0.5); 
+}
+#instructions { 
+    position: fixed; top: 20px; left: 20px; 
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 10px;
+  border-radius: 5px;
+  background: #a3a3a3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #fff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chart Editor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="./editor.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div id="instructions">
+        <input type="file" id="chartJson"><br><br>
+        <input type="range" min="0.1" max="1" value="0.1" step="0.1" class="slider" id="slider">
+        <p id="sliderInfo"></p>
+        <h3>Controls:</h3>
+        <ul>
+            <li><b>Spacebar:</b> Play / Pause Music</li>
+            <li><b>Scroll Wheel:</b> Move up/down timeline</li>
+            <li><b>Left Click:</b> Add / Remove Note</li>
+            <li><b>Press 'S':</b> Save Chart to JSON</li>
+        </ul>
+    </div>
+    <script src="./editor.js"></script>
+</body>
+</html>
