@@ -75,65 +75,67 @@ class Key {
         let justPressed = currentlyDown && !this.isDownLastFrame;
         let songTime = timeElapsed - chart.metadata.offset;
 
-        if (justPressed) {
+        if (start) {
+            if (justPressed) {
+                for (var i = notes.length - 1; i >= 0; i--) {
+                    var clickNote = notes[i];
+                    
+                    // Only look at notes in our column that aren't already being held
+                    if (clickNote.noteKeyType == this.keyType && !clickNote.isBeingHeld) {
+                        var d = abs(this.position[1] - clickNote.position[1]); // Vertical distance
+                        
+                        if (d < (this.diameter / 2 + clickNote.diameter / 2 + 10)) {
+                            // Score the Head hit
+                            if (d < 5) { texts.push(new AccuracyText("Perfect")); score += 50; }
+                            else if (d < 15) { texts.push(new AccuracyText("Great")); score += 40; }
+                            else if (d < 30) { texts.push(new AccuracyText("Good")); score += 30; }
+                            else if (d < 40) { texts.push(new AccuracyText("Ok")); score += 15; }
+                            else { texts.push(new AccuracyText("Bad")); score += 5; }
+
+                            if (clickNote.noteType === NoteTypes.SHORT) {
+                                notes.splice(i, 1); // Delete short notes
+                            } else if (clickNote.noteType === NoteTypes.LONG) {
+                                clickNote.isBeingHeld = true; // Lock the long note!
+                            }
+                            break; // Only hit one note per press
+                        }
+                    }
+                }
+            }
+
             for (var i = notes.length - 1; i >= 0; i--) {
                 var clickNote = notes[i];
                 
-                // Only look at notes in our column that aren't already being held
+                if (clickNote.noteKeyType == this.keyType && clickNote.isBeingHeld) {
+                    if (!currentlyDown) {
+                        // The player let go too early!
+                        score -= 10;
+                        notes.splice(i, 1);
+                    } else if (songTime >= clickNote.tailTime) {
+                        texts.push(new AccuracyText("Perfect"));
+                        score += 50;
+                        notes.splice(i, 1);
+                    }
+                }
+            }
+
+            for (var i = notes.length - 1; i >= 0; i--) {
+                var clickNote = notes[i];
+                
                 if (clickNote.noteKeyType == this.keyType && !clickNote.isBeingHeld) {
-                    var d = abs(this.position[1] - clickNote.position[1]); // Vertical distance
-                    
-                    if (d < (this.diameter / 2 + clickNote.diameter / 2 + 10)) {
-                        // Score the Head hit
-                        if (d < 5) { texts.push(new AccuracyText("Perfect")); score += 50; }
-                        else if (d < 15) { texts.push(new AccuracyText("Great")); score += 40; }
-                        else if (d < 30) { texts.push(new AccuracyText("Good")); score += 30; }
-                        else if (d < 40) { texts.push(new AccuracyText("Ok")); score += 15; }
-                        else { texts.push(new AccuracyText("Bad")); score += 5; }
-
-                        if (clickNote.noteType === NoteTypes.SHORT) {
-                            notes.splice(i, 1); // Delete short notes
-                        } else if (clickNote.noteType === NoteTypes.LONG) {
-                            clickNote.isBeingHeld = true; // Lock the long note!
+                    // If the head of the note falls too far past the receptor
+                    if (!clickNote.noteType) {
+                        if (clickNote.position[1] < this.position[1] - this.diameter * 2) {
+                            texts.push(new AccuracyText("Miss"));
+                            score -= 20;
+                            notes.splice(i, 1);
                         }
-                        break; // Only hit one note per press
-                    }
-                }
-            }
-        }
-
-        for (var i = notes.length - 1; i >= 0; i--) {
-            var clickNote = notes[i];
-            
-            if (clickNote.noteKeyType == this.keyType && clickNote.isBeingHeld) {
-                if (!currentlyDown) {
-                    // The player let go too early!
-                    score -= 10;
-                    notes.splice(i, 1);
-                } else if (songTime >= clickNote.tailTime) {
-                    texts.push(new AccuracyText("Perfect"));
-                    score += 50;
-                    notes.splice(i, 1);
-                }
-            }
-        }
-
-        for (var i = notes.length - 1; i >= 0; i--) {
-            var clickNote = notes[i];
-            
-            if (clickNote.noteKeyType == this.keyType && !clickNote.isBeingHeld) {
-                // If the head of the note falls too far past the receptor
-                if (!clickNote.noteType) {
-                    if (clickNote.position[1] < this.position[1] - this.diameter * 2) {
-                        texts.push(new AccuracyText("Miss"));
-                        score -= 20;
-                        notes.splice(i, 1);
-                    }
-                } else {
-                    if (clickNote.position[1] < this.position[1] - this.diameter - clickNote.noteLength) {
-                        texts.push(new AccuracyText("Miss"));
-                        score -= 20;
-                        notes.splice(i, 1);
+                    } else {
+                        if (clickNote.position[1] < this.position[1] - this.diameter - clickNote.noteLength) {
+                            texts.push(new AccuracyText("Miss"));
+                            score -= 20;
+                            notes.splice(i, 1);
+                        }
                     }
                 }
             }
