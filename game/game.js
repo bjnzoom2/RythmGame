@@ -45,7 +45,7 @@ class Key {
     fillCol = "#aaa";
     clickFillCol = "#fff";
     position = [0, 0];
-    diameter = 50;
+    diameter = 60;
     key = 32;
     keyType;
 
@@ -67,7 +67,7 @@ class Key {
     drawKey() {
         stroke("#000");
         fill(keyIsDown(this.key) ? this.clickFillCol : this.fillCol);
-        rect(this.position[0] - this.diameter / 2, this.position[1], this.diameter, 50, this.diameter);
+        rect(this.position[0] - this.diameter / 2, this.position[1], this.diameter, 60, this.diameter);
     }
 
     update() {
@@ -145,15 +145,15 @@ class Key {
 
 class Note {
     fillCol = "#fff";
-    diameter = 50;
-    position = [0, 601];
+    diameter = 60;
+    position = [0, 0];
     noteSpeed = 1;
     spawnTime = 0;
     tailTime = 0;
     noteKeyType = 0;
 
     noteType = 0;
-    noteLength = 50;
+    noteLength = 60;
     isBeingHeld = false;
 
     noteDamageType = 0;
@@ -170,16 +170,16 @@ class Note {
 
         switch (noteKeyType) {
             case 0:
-                this.position[0] = 200;
+                this.position[0] = 240;
                 break;
             case 1:
-                this.position[0] = 266.667;
+                this.position[0] = 320;
                 break;
             case 2:
-                this.position[0] = 333.333;
+                this.position[0] = 400;
                 break;
             case 3:
-                this.position[0] = 400;
+                this.position[0] = 480;
                 break;
             default:
                 console.log("Invalid Key Type");
@@ -187,7 +187,7 @@ class Note {
     }
 
     drawNote() {
-        if (this.position[1] > 600 && !this.isBeingHeld) return;
+        if (this.position[1] > 720 && !this.isBeingHeld) return;
 
         stroke("#000");
         fill("#fff");
@@ -199,10 +199,10 @@ class Note {
             let songTime = timeElapsed - chart.metadata.offset;
             let msUntilTail = this.tailTime - songTime;
             
-            drawY = 50; // Pin the head to the receptor key (y = 50)
+            drawY = 60; // Pin the head to the receptor key (y = 50)
             drawLen = msUntilTail * (this.noteSpeed / 1000); // Shrink the tail
             
-            if (drawLen < 50) drawLen = 50; // Prevent reverse drawing
+            if (drawLen < 60) drawLen = 60; // Prevent reverse drawing
         }
 
         rect(this.position[0] - this.diameter / 2, drawY, this.diameter, drawLen, this.diameter);
@@ -212,17 +212,17 @@ class Note {
         var songTime = timeElapsed - chart.metadata.offset;
         var msUntilHit = this.spawnTime - songTime;
         var speedPxMs = this.noteSpeed / 1000;
-        this.position[1] = 50 + (msUntilHit * speedPxMs);
+        this.position[1] = 60 + (msUntilHit * speedPxMs);
 
         if (this.noteType === NoteTypes.LONG) {
             this.noteLength = (this.tailTime - this.spawnTime) * speedPxMs;
-            if (this.noteLength < 50) this.noteLength = 50; // Minimum visual length
+            if (this.noteLength < 60) this.noteLength = 60; // Minimum visual length
         }
     }
 }
 
 class AccuracyText {
-    position = [8, 274];
+    position = [8, 344];
     strokeCol = [0, 0, 0, 255];
     fillCol = [255, 255, 255, 255];
     textContent = "";
@@ -257,17 +257,16 @@ function preload() {
 }
 
 function setup() {
-    var canvas = createCanvas(600, 600);
-    background('white');
+    var canvas = createCanvas(720, 720);
     canvas.class("canvas");
 
-    left = new Key("#bbb", "#fff", [200, 50], 50, KeyTypes.LEFT);
-    down = new Key("#bbb", "#fff", [266.667, 50], 50, KeyTypes.DOWN);
-    up = new Key("#bbb", "#fff", [333.333, 50], 50, KeyTypes.UP);
-    right = new Key("#bbb", "#fff", [400, 50] , 50, KeyTypes.RIGHT);
+    left = new Key("#bbb", "#fff", [240, 60], 60, KeyTypes.LEFT);
+    down = new Key("#bbb", "#fff", [320, 60], 60, KeyTypes.DOWN);
+    up = new Key("#bbb", "#fff", [400, 60], 60, KeyTypes.UP);
+    right = new Key("#bbb", "#fff", [480, 60] , 60, KeyTypes.RIGHT);
     keys.push(left, down, up, right);
 
-    var speedMultiplier = 4;
+    var speedMultiplier = 5;
     var speed = 100 / (60000 / chart.metadata.bpm) * speedMultiplier * 1000;
     for (var i = 0; i < chart.notes.length; i++) {
         var time = chart.notes[i].time;
@@ -275,7 +274,7 @@ function setup() {
         var notetype = chart.notes[i].noteType;
         var holdDur = chart.notes[i].holdDuration;
 
-        var note = new Note("#fff", 50, speed, time, keytype, notetype, holdDur);
+        var note = new Note("#fff", 60, speed, time, keytype, notetype, holdDur);
         notes.push(note);
     }
 
@@ -294,40 +293,40 @@ function draw() {
         timeElapsed = song.currentTime() * 1000; 
     }
 
-    image(img, 0, 0, 600, 600);
+    image(img, 0, 0, 720, 720);
 
-    textSize(16);
+    textSize(19);
     textAlign(LEFT, TOP);
     stroke("#000");
     fill("#fff");
-    text("Score: " + score, 8, 16);
+    text("Score: " + score, 8, 19);
 
     stroke(0, 0, 0, 75);
     fill(0, 0, 0, 75);
-    rect(150, -1, 300, 601);
+    rect(180, -1, 360, 721);
 
     let fps = frameRate();
-    textSize(16);
+    textSize(19);
     textAlign(RIGHT, TOP);
     stroke("#000");
     fill("#fff");
-    text("FPS: " + Math.floor(fps), 592, 16);
+    text("FPS: " + Math.floor(fps), 712, 19);
 
     if (!start) {
-        textSize(32);
+        textSize(38);
         textAlign(CENTER, CENTER);
         stroke("#000");
         fill("#fff");
-        text("Press 1 to start", 300, 300);
+        text("Press 1 to start", 360, 360);
     }
 
     if (songEnd) {
-        textSize(32);
+        textSize(38);
         textAlign(CENTER, CENTER);
         stroke("#000");
         fill("#fff");
-        text("Finished", 300, 280);
-        text("Score: " + score, 300, 320);
+        text("Finished", 360, 328);
+        text("Score: " + score, 360, 392);
     }
 
     for (var i = 0; i < keys.length; i++) {
