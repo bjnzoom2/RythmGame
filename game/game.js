@@ -4,31 +4,55 @@ window.addEventListener("keydown", function(e) {
     }
 }, { capture: true, passive: false });
 
+// Keys
 var left;
 var down;
 var up;
 var right;
 
+// Data
 var score = 0;
 var accuracyText = "";
 var timeElapsed = 0;
 
+var canvasWidth;
+var canvasHeight;
+
+var leftPosX;
+var downPosX;
+var upPosX;
+var rightPosX;
+
+var diam;
+var keyHeight;
+
+// Arrays
 var keys = [];
 var notes = [];
 var texts = [];
 
+// Chart stuff
 var tetoPearChart;
 var tetoPearSong;
 var tetoPearImg;
 
+var signalingChart;
+var signalingSong;
+var signalingImg;
+var signalingVid;
+
+// Chosen chart
 var chosenSong;
 var chart;
 var song;
 var img;
+var vid;
 
+// Song vars
 var start = false;
 var songEnd = false;
 
+// Enums
 const KeyTypes = {
     LEFT : 0, 
     DOWN : 1, 
@@ -72,7 +96,7 @@ class Key {
     drawKey() {
         stroke("#000");
         fill(keyIsDown(this.key) ? this.clickFillCol : this.fillCol);
-        rect(this.position[0] - this.diameter / 2, this.position[1], this.diameter, 60, this.diameter);
+        rect(this.position[0] - this.diameter / 2, this.position[1], this.diameter, this.diameter, this.diameter);
     }
 
     update() {
@@ -177,16 +201,16 @@ class Note {
 
         switch (noteKeyType) {
             case 0:
-                this.position[0] = 240;
+                this.position[0] = leftPosX;
                 break;
             case 1:
-                this.position[0] = 320;
+                this.position[0] = downPosX;
                 break;
             case 2:
-                this.position[0] = 400;
+                this.position[0] = upPosX;
                 break;
             case 3:
-                this.position[0] = 480;
+                this.position[0] = rightPosX;
                 break;
             default:
                 console.log("Invalid Key Type");
@@ -194,7 +218,7 @@ class Note {
     }
 
     drawNote() {
-        if (this.position[1] > 720 && !this.isBeingHeld) return;
+        if (this.position[1] > canvasHeight && !this.isBeingHeld) return;
 
         stroke("#000");
         fill("#fff");
@@ -206,10 +230,10 @@ class Note {
             let songTime = timeElapsed - chart.metadata.offset;
             let msUntilTail = this.tailTime - songTime;
             
-            drawY = 60; // Pin the head to the receptor key (y = 50)
+            drawY = diam; // Pin the head to the receptor key
             drawLen = msUntilTail * (this.noteSpeed / 1000); // Shrink the tail
             
-            if (drawLen < 60) drawLen = 60; // Prevent reverse drawing
+            if (drawLen < diam) drawLen = diam; // Prevent reverse drawing
         }
 
         rect(this.position[0] - this.diameter / 2, drawY, this.diameter, drawLen, this.diameter);
@@ -219,23 +243,25 @@ class Note {
         var songTime = timeElapsed - chart.metadata.offset;
         var msUntilHit = this.spawnTime - songTime;
         var speedPxMs = this.noteSpeed / 1000;
-        this.position[1] = 60 + (msUntilHit * speedPxMs);
+        this.position[1] = diam + (msUntilHit * speedPxMs);
 
         if (this.noteType === NoteTypes.LONG) {
             this.noteLength = (this.tailTime - this.spawnTime) * speedPxMs;
-            if (this.noteLength < 60) this.noteLength = 60; // Minimum visual length
+            if (this.noteLength < diam) this.noteLength = diam; // Minimum visual length
         }
     }
 }
 
 class AccuracyText {
-    position = [8, 344];
+    position = [8, 0];
     strokeCol = [0, 0, 0, 255];
     fillCol = [255, 255, 255, 255];
     textContent = "";
 
     constructor(textContent) {
         this.textContent = textContent;
+
+        this.position[1] = canvasHeight / 2 - 16;
     }
 
     drawText() {
@@ -261,22 +287,60 @@ function preload() {
     tetoPearChart = loadJSON('../charts/tetoPearCalc/chart.json'); 
     tetoPearSong = loadSound('../charts/tetoPearCalc/tetoPearCalc.mp3');
     tetoPearImg = loadImage('../charts/tetoPearCalc/tetoPearCalc.jpg');
+
+    signalingChart = loadJSON('../charts/signaling/chart.json'); 
+    signalingSong = loadSound('../charts/signaling/signaling.mp3');
+    signalingImg = loadImage('../charts/signaling/signaling.jpg');
+
+    signalingVid = createVideo('../charts/signaling/signaling.mp4');
+    signalingVid.hide();
 }
 
 function setup() {
-    var canvas = createCanvas(720, 720);
-    canvas.class("canvas");
+    chosenSong = localStorage.getItem("Song");
+    if (chosenSong == "Teto Pear On The Calculator") {
+        canvasWidth = 720;
+        canvasHeight = 720;
 
-    if (localStorage.getItem("Song") == "Teto Pear On The Calculator") {
         chart = tetoPearChart;
         song = tetoPearSong;
         img = tetoPearImg;
+        vid = null;
+
+        leftPosX = 240;
+        downPosX = 320;
+        upPosX = 400;
+        rightPosX = 480;
+
+        diam = 60;
+        keyHeight = 60;
+    } else if (chosenSong == "Signaling") {
+        canvasWidth = 1280;
+        canvasHeight = 720;
+
+        chart = signalingChart;
+        song = signalingSong;
+        img = signalingImg;
+        vid = signalingVid;
+
+        vid.volume(0);
+
+        leftPosX = 499.996;
+        downPosX = 593.332;
+        upPosX = 686.668;
+        rightPosX = 780.004;
+
+        diam = 70;
+        keyHeight = 70;
     }
 
-    left = new Key("#bbb", "#fff", [240, 60], 60, KeyTypes.LEFT);
-    down = new Key("#bbb", "#fff", [320, 60], 60, KeyTypes.DOWN);
-    up = new Key("#bbb", "#fff", [400, 60], 60, KeyTypes.UP);
-    right = new Key("#bbb", "#fff", [480, 60] , 60, KeyTypes.RIGHT);
+    var canvas = createCanvas(canvasWidth, canvasHeight);
+    canvas.class("canvas");
+
+    left = new Key("#bbb", "#fff", [leftPosX, keyHeight], diam, KeyTypes.LEFT);
+    down = new Key("#bbb", "#fff", [downPosX, keyHeight], diam, KeyTypes.DOWN);
+    up = new Key("#bbb", "#fff", [upPosX, keyHeight], diam, KeyTypes.UP);
+    right = new Key("#bbb", "#fff", [rightPosX, keyHeight], diam, KeyTypes.RIGHT);
     keys.push(left, down, up, right);
 
     var speedMultiplier = 5;
@@ -287,7 +351,7 @@ function setup() {
         var notetype = chart.notes[i].noteType;
         var holdDur = chart.notes[i].holdDuration;
 
-        var note = new Note("#fff", 60, speed, time, keytype, notetype, holdDur);
+        var note = new Note("#fff", diam, speed, time, keytype, notetype, holdDur);
         notes.push(note);
     }
 
@@ -298,15 +362,26 @@ function setup() {
 
 function draw() {
     background("#fff");
-    if (!song.isPlaying() && start && !songEnd) {
-        song.play();
+
+    if (start && vid) {
+        image(vid, 0, 0, canvasWidth, canvasHeight);
+    } else {
+        image(img, 0, 0, canvasWidth, canvasHeight);
     }
 
     if (song.isPlaying()) {
         timeElapsed = song.currentTime() * 1000; 
-    }
 
-    image(img, 0, 0, 720, 720);
+        if (vid && vid.elt.readyState >= 2) { // Ensure video is loaded enough to play
+            let songSecs = song.currentTime();
+            let vidSecs = vid.time();
+
+            // If video is more than 100ms out of sync, snap it to the song
+            if (abs(songSecs - vidSecs) > 0.1) {
+                vid.time(songSecs);
+            }
+        }
+    }
 
     textSize(19);
     textAlign(LEFT, TOP);
@@ -316,21 +391,21 @@ function draw() {
 
     stroke(0, 0, 0, 75);
     fill(0, 0, 0, 75);
-    rect(180, -1, 360, 721);
+    rect(leftPosX - 60, -1, rightPosX - leftPosX + 120, canvasHeight + 1);
 
     let fps = frameRate();
     textSize(19);
     textAlign(RIGHT, TOP);
     stroke("#000");
     fill("#fff");
-    text("FPS: " + Math.floor(fps), 712, 19);
+    text("FPS: " + Math.floor(fps), canvasWidth - 8, 19);
 
     if (!start) {
         textSize(38);
         textAlign(CENTER, CENTER);
         stroke("#000");
         fill("#fff");
-        text("Press 1 to start", 360, 360);
+        text("Press 1 to start", canvasWidth / 2, canvasHeight / 2);
     }
 
     if (songEnd) {
@@ -338,8 +413,8 @@ function draw() {
         textAlign(CENTER, CENTER);
         stroke("#000");
         fill("#fff");
-        text("Finished", 360, 328);
-        text("Score: " + score, 360, 392);
+        text("Finished", canvasWidth / 2, canvasHeight / 2 - 32);
+        text("Score: " + score, canvasWidth / 2, canvasHeight / 2 + 32);
     }
 
     for (var i = 0; i < keys.length; i++) {
@@ -358,7 +433,16 @@ function draw() {
 }
 
 function keyPressed() {
-    if (key == "1") {
+    if (key == "1" && !start) {
         start = true;
+
+        if (song && !song.isPlaying()) {
+            song.play();
+        }
+        
+        if (vid) {
+            vid.time(0);
+            vid.play();
+        }
     }
 }

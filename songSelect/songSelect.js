@@ -1,4 +1,5 @@
 let tetoPearCalc;
+let signaling;
 let arrowImg;
 let arrowReverseImg;
 let songs = [];
@@ -37,6 +38,7 @@ class Button {
 
 function preload() {
     tetoPearCalc = loadImage('../charts/tetoPearCalc/tetoPearCalc.jpg');
+    signaling = loadImage('../charts/signaling/signaling.jpg');
     arrowImg = loadImage('./arrow.png');
     arrowReverseImg = loadImage('./arrowReversed.png');
 }
@@ -47,25 +49,34 @@ function setup() {
 
     button = new Button([260, 550], 200, 50);
 
-    songs.push("Teto Pear On The Calculator");
-    targetedSong = songs[0];
+    songs.push("Teto Pear On The Calculator", "Signaling");
+    targetedSong = songs[index];
 }
 
 function draw() {
     background("#333");
 
-    stroke("#222");
-    fill("#222");
-    rect(195, 10, 330, 330);
+    if (targetedSong == "Teto Pear On The Calculator") {
+        stroke("#222");
+        fill("#222");
+        rect(195, 10, 330, 330);
 
-    imageMode(CORNER);
-    image(tetoPearCalc, 210, 25, 300, 300);
+        imageMode(CORNER);
+        image(tetoPearCalc, 210, 25, 300, 300);
+    } else if (targetedSong == "Signaling") {
+        stroke("#222");
+        fill("#222");
+        rect(131.667, 25, 456.667, 270);
+
+        imageMode(CORNER);
+        image(signaling, 146.667, 40, 426.667, 240);
+    }
 
     textSize(32);
     textAlign(CENTER, CENTER);
     stroke("#000");
     fill("#fff");
-    text("Teto Pear On The Calculator", 360, 420);
+    text(targetedSong, 360, 420);
 
     imageMode(CENTER);
     image(arrowImg, 550, 575, 30, 30);
