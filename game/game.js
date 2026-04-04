@@ -17,6 +17,11 @@ var keys = [];
 var notes = [];
 var texts = [];
 
+var tetoPearChart;
+var tetoPearSong;
+var tetoPearImg;
+
+var chosenSong;
 var chart;
 var song;
 var img;
@@ -253,14 +258,20 @@ class AccuracyText {
 }
 
 function preload() {
-    chart = loadJSON('../charts/tetoPearCalc/chart.json'); 
-    song = loadSound('../charts/tetoPearCalc/tetoPearCalc.mp3');
-    img = loadImage('../charts/tetoPearCalc/tetoPearCalc.jpg');
+    tetoPearChart = loadJSON('../charts/tetoPearCalc/chart.json'); 
+    tetoPearSong = loadSound('../charts/tetoPearCalc/tetoPearCalc.mp3');
+    tetoPearImg = loadImage('../charts/tetoPearCalc/tetoPearCalc.jpg');
 }
 
 function setup() {
     var canvas = createCanvas(720, 720);
     canvas.class("canvas");
+
+    if (localStorage.getItem("Song") == "Teto Pear On The Calculator") {
+        chart = tetoPearChart;
+        song = tetoPearSong;
+        img = tetoPearImg;
+    }
 
     left = new Key("#bbb", "#fff", [240, 60], 60, KeyTypes.LEFT);
     down = new Key("#bbb", "#fff", [320, 60], 60, KeyTypes.DOWN);

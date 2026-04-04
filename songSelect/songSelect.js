@@ -1,5 +1,10 @@
 let tetoPearCalc;
-let buttons = [];
+let arrowImg;
+let arrowReverseImg;
+let songs = [];
+let targetedSong = "";
+let button;
+let index = 0;
 
 class Button {
     position = [0, 0];
@@ -32,14 +37,18 @@ class Button {
 
 function preload() {
     tetoPearCalc = loadImage('../charts/tetoPearCalc/tetoPearCalc.jpg');
+    arrowImg = loadImage('./arrow.png');
+    arrowReverseImg = loadImage('./arrowReversed.png');
 }
 
 function setup() {
     let canvas = createCanvas(720, 720);
     canvas.class('canvas');
 
-    let button = new Button([260, 550], 200, 50);
-    buttons.push(button);
+    button = new Button([260, 550], 200, 50);
+
+    songs.push("Teto Pear On The Calculator");
+    targetedSong = songs[0];
 }
 
 function draw() {
@@ -49,6 +58,7 @@ function draw() {
     fill("#222");
     rect(195, 10, 330, 330);
 
+    imageMode(CORNER);
     image(tetoPearCalc, 210, 25, 300, 300);
 
     textSize(32);
@@ -57,15 +67,28 @@ function draw() {
     fill("#fff");
     text("Teto Pear On The Calculator", 360, 420);
 
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].draw();
-    }
+    imageMode(CENTER);
+    image(arrowImg, 550, 575, 30, 30);
+    image(arrowReverseImg, 170, 575, 30, 30);
+
+    button.draw();
 }
 
 function mousePressed() {
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].update(() => {
-            console.log("Hi");  
-        });
+    button.update(() => {
+        localStorage.setItem("Song", targetedSong);
+        window.open("../game/game.html");
+    });
+}
+
+function keyPressed() {
+    if (keyCode == LEFT_ARROW) {
+        index -= 1;
+        if (index < 0) index = songs.length - 1;
+    } else if (keyCode == RIGHT_ARROW) {
+        index += 1;
+        if (index >= songs.length) index = 0;
     }
+    targetedSong = songs[index];
+    console.log(index, targetedSong);
 }
