@@ -1,9 +1,110 @@
 {
-    "metadata": {
-        "bpm": 150,
-        "offset": 1675
+  "metadata": {
+    "bpm": 150,
+    "offset": 1675
+  },
+  "notes": [
+    {
+      "time": 50,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 375
     },
-    "notes": [
-
-    ]
+    {
+      "time": 425,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 675,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 750,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1075,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1250,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1475,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1475,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1800,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 2075,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 2075,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 2475,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 2575,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 2750,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 3050,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 3275,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 1125
+    },
+    {
+      "time": 3275,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 1125
+    }
+  ]
 }

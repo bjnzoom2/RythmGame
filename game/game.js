@@ -176,7 +176,7 @@ class Key {
 
 class Note {
     fillCol = "#fff";
-    diameter = 60;
+    diameter = diam;
     position = [0, 0];
     noteSpeed = 1;
     spawnTime = 0;
@@ -184,7 +184,7 @@ class Note {
     noteKeyType = 0;
 
     noteType = 0;
-    noteLength = 60;
+    noteLength = diam;
     isBeingHeld = false;
 
     noteDamageType = 0;
@@ -297,6 +297,7 @@ function preload() {
 }
 
 function setup() {
+    var speedMultiplier;
     chosenSong = localStorage.getItem("Song");
     if (chosenSong == "Teto Pear On The Calculator") {
         canvasWidth = 720;
@@ -314,6 +315,7 @@ function setup() {
 
         diam = 60;
         keyHeight = 60;
+        speedMultiplier = 5;
     } else if (chosenSong == "Signaling") {
         canvasWidth = 1280;
         canvasHeight = 720;
@@ -332,6 +334,7 @@ function setup() {
 
         diam = 70;
         keyHeight = 70;
+        speedMultiplier = 4;
     }
 
     var canvas = createCanvas(canvasWidth, canvasHeight);
@@ -342,8 +345,6 @@ function setup() {
     up = new Key("#bbb", "#fff", [upPosX, keyHeight], diam, KeyTypes.UP);
     right = new Key("#bbb", "#fff", [rightPosX, keyHeight], diam, KeyTypes.RIGHT);
     keys.push(left, down, up, right);
-
-    var speedMultiplier = 5;
     var speed = 100 / (60000 / chart.metadata.bpm) * speedMultiplier * 1000;
     for (var i = 0; i < chart.notes.length; i++) {
         var time = chart.notes[i].time;
