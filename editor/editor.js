@@ -8,8 +8,8 @@ window.addEventListener('keydown', function(e) {
 
 let song;
 let click;
-let bpm = 91;
-let offset = 1100;
+let bpm = 100;
+let offset = 0;
 let gridSnap = 16; // 64th notes
 let zoom = 0.6;   // Visual stretch
 
@@ -19,7 +19,9 @@ let editorNotesClickSound = [];
 let timeToStart = 0;
 
 let openChart = document.getElementById("chartJson");
-let opened = false;
+let songFile = document.getElementById("songFile");
+let bpmInput = document.getElementById("bpm");
+let offsetInput = document.getElementById("offset");
 
 let slider = document.getElementById("slider");
 let sensitivity = document.getElementById("sliderInfo");
@@ -30,8 +32,6 @@ const colWidth = 50;
 let draggingNote = null; // Tracks the note we are currently stretching
 
 function preload() {
-    // Load your audio file here
-    song = loadSound('../charts/tetoPearCalc/tetoPearCalc.mp3');
     click = loadSound('../click.wav')
 }
 
@@ -39,8 +39,6 @@ function setup() {
     createCanvas(600, 800);
     click.playMode('restart');
     click.setVolume(0.2);
-    song.playMode('sustain');
-    song.setVolume(0.6);
 
     sensitivity.innerText = "Sensitivity: " + slider.value;
 
@@ -51,10 +49,29 @@ function setup() {
                 let json = JSON.parse(text);
                 editorNotes = json.notes;
                 editorNotesClickSound = new Array(editorNotes.length).fill(false);
-                opened = true;
                 console.log("Chart Loaded");
             });
         }
+    });
+
+    songFile.addEventListener('change', function() {
+        const file = songFile.files[0];
+        if (file) {
+            const fileUrl = URL.createObjectURL(file);
+            song = loadSound(fileUrl, () => {
+                song.playMode('sustain');
+                song.setVolume(0.6);
+                console.log("Song Loaded");
+            });
+        }
+    });
+
+    bpmInput.addEventListener('change', function() {
+        bpm = bpmInput.valueAsNumber;
+    });
+
+    offsetInput.addEventListener('change', function() {
+        offset = offsetInput.valueAsNumber;
     });
 
     slider.oninput = function() {
@@ -65,7 +82,11 @@ function setup() {
 function draw() {
     background(30);
 
-    let currentMs = song.currentTime() * 1000;
+    let currentMs = 0;
+    if (song && song.isLoaded()) {
+        currentMs = song.currentTime() * 1000;
+    }
+
     let chartTime = currentMs - offset; 
 
     let msPerBeat = 60000 / bpm;
@@ -73,7 +94,7 @@ function draw() {
     let stepHeight = msPerStep * zoom;
 
     // Auto-scroll the camera to follow the playhead when the song is playing
-    if (song.isPlaying()) {
+    if (song && song.isPlaying()) {
         scrollY = (chartTime * zoom) - (height / 2);
     }
 
@@ -253,16 +274,14 @@ function mouseWheel(event) {
 function keyPressed() {
     // Play / Pause Toggle
     if (keyCode === 32) { // Spacebar
-        if (song.isPlaying()) {
-            song.pause();
-        } else {
-            // Jump playback to where the camera is currently looking
-            // let timeToStart = (scrollY + height / 2) / zoom / 1000;
-            // if (timeToStart < 0) timeToStart = 0;
-            
-            song.play();
-            var newTime = (((scrollY + height / 2) / zoom) + offset) / 1000;
-            song.jump(newTime);
+        if (song) { // <--- Add this check
+            if (song.isPlaying()) {
+                song.pause();
+            } else {
+                song.play();
+                var newTime = (((scrollY + height / 2) / zoom) + offset) / 1000;
+                song.jump(newTime);
+            }
         }
     }
 
