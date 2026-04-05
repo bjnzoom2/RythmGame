@@ -26,6 +26,9 @@ let offsetInput = document.getElementById("offset");
 let slider = document.getElementById("slider");
 let sensitivity = document.getElementById("sliderInfo");
 
+let zoomSlider = document.getElementById("zoom");
+let zoomInfo = document.getElementById("zoomInfo");
+
 const cols = [200, 266.667, 333.333, 400];
 const colWidth = 50;
 
@@ -38,9 +41,11 @@ function preload() {
 function setup() {
     createCanvas(600, 800);
     click.playMode('restart');
-    click.setVolume(0.2);
+    click.setVolume(0.4);
 
     sensitivity.innerText = "Sensitivity: " + slider.value;
+    zoomInfo.innerText = "Zoom: " + zoomSlider.value;
+    zoom = zoomSlider.value;
 
     openChart.addEventListener('change', function() {
         const file = openChart.files[0];
@@ -60,7 +65,7 @@ function setup() {
             const fileUrl = URL.createObjectURL(file);
             song = loadSound(fileUrl, () => {
                 song.playMode('sustain');
-                song.setVolume(0.6);
+                song.setVolume(0.4);
                 console.log("Song Loaded");
             });
         }
@@ -76,6 +81,11 @@ function setup() {
 
     slider.oninput = function() {
         sensitivity.innerText = "Sensitivity: " + this.value;
+    }
+
+    zoomSlider.oninput = function() {
+        zoomInfo.innerText = "Zoom: " + this.value;
+        zoom = zoomSlider.value;
     }
 }
 

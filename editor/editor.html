@@ -13,9 +13,13 @@
         <p>Chart: <input type="file" id="chartJson" accept=".json"><br></p>
         <p>Song: <input type="file" id="songFile" accept="audio/*"><br></p>
         <p>BPM: <input type="number" id="bpm"><br></p>
-        <p>Offset: <input type="number" id="offset"><br></p>
-        <input type="range" min="0.1" max="1" value="0.1" step="0.1" class="slider" id="slider">
+        <p>Offset: <input type="number" id="offset"><br></p><br>
+
         <p id="sliderInfo"></p>
+        <input type="range" min="0.05" max="1" value="0.05" step="0.1" class="slider" id="slider">
+        <p id="zoomInfo"></p>
+        <input type="range" min="0.05" max="1" value="0.05" step="0.1" class="slider" id="zoom">
+
         <h3>Controls:</h3>
         <ul>
             <li><b>Spacebar:</b> Play / Pause Music</li>
