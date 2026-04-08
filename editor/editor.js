@@ -47,30 +47,6 @@ function setup() {
     zoomInfo.innerText = "Zoom: " + zoomSlider.value;
     zoom = zoomSlider.value;
 
-    openChart.addEventListener('change', function() {
-        const file = openChart.files[0];
-        if (file) {
-            file.text().then(text => {
-                let json = JSON.parse(text);
-                editorNotes = json.notes;
-                editorNotesClickSound = new Array(editorNotes.length).fill(false);
-                console.log("Chart Loaded");
-            });
-        }
-    });
-
-    songFile.addEventListener('change', function() {
-        const file = songFile.files[0];
-        if (file) {
-            const fileUrl = URL.createObjectURL(file);
-            song = loadSound(fileUrl, () => {
-                song.playMode('sustain');
-                song.setVolume(0.4);
-                console.log("Song Loaded");
-            });
-        }
-    });
-
     bpmInput.addEventListener('change', function() {
         bpm = bpmInput.valueAsNumber;
     });
@@ -87,6 +63,35 @@ function setup() {
         zoomInfo.innerText = "Zoom: " + this.value;
         zoom = zoomSlider.value;
     }
+
+    openChart.addEventListener('change', function() {
+        const file = openChart.files[0];
+        if (file) {
+            file.text().then(text => {
+                let json = JSON.parse(text);
+                editorNotes = json.notes;
+                editorNotesClickSound = new Array(editorNotes.length).fill(false);
+                console.log("Chart Loaded");
+
+                bpm = json.metadata.bpm;
+                offset = json.metadata.offset;
+                bpmInput.value = bpm;
+                offsetInput.value = offset;
+            });
+        }
+    });
+
+    songFile.addEventListener('change', function() {
+        const file = songFile.files[0];
+        if (file) {
+            const fileUrl = URL.createObjectURL(file);
+            song = loadSound(fileUrl, () => {
+                song.playMode('sustain');
+                song.setVolume(0.4);
+                console.log("Song Loaded");
+            });
+        }
+    });
 }
 
 function draw() {
