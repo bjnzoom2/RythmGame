@@ -1071,6 +1071,78 @@
       "keyType": 3,
       "noteType": 1,
       "holdDuration": 175
+    },
+    {
+      "time": 43275,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 43675,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 43900,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 43975,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 44275,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 44375,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 44475,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 44700,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 44775,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 45075,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 45275,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 45275,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 250
     }
   ]
 }
