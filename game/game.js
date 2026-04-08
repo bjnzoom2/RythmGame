@@ -315,7 +315,7 @@ function setup() {
 
         diam = 60;
         keyHeight = 60;
-        speedMultiplier = 5;
+        speedMultiplier = 6;
     } else if (chosenSong == "Signaling") {
         canvasWidth = 1280;
         canvasHeight = 720;
@@ -334,7 +334,7 @@ function setup() {
 
         diam = 70;
         keyHeight = 70;
-        speedMultiplier = 4;
+        speedMultiplier = 4.25;
     }
 
     var canvas = createCanvas(canvasWidth, canvasHeight);
