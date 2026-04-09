@@ -5,2389 +5,1588 @@
   },
   "notes": [
     {
-      "data": {
-        "time": 50,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 375
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 425,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 675,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 750,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 1075,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 1250,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 1475,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 1475,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 1800,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 275
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 2075,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 2075,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 2475,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 2575,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 2750,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 3050,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 3275,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 1125
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 3275,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 1125
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 4875,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 5450,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 5550,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 5650,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 5650,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 300
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 6225,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 6350,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 6450,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 6450,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 7000,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 7150,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 7275,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 7450,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 7600,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 7850,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 8050,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 8050,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 8625,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 8750,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 8850,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 8850,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 9450,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 9525,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 9625,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 375
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 10100,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 10225,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 10425,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 10425,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 11225,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 11225,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 11850,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 11950,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 12075,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 12075,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 150
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 12650,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 12750,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 12875,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 12875,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 150
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 13450,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 13550,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 13650,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 13825,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 14025,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 14250,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 14450,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 14450,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 15025,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 15150,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 15275,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 15275,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 15825,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 15950,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 16075,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 16075,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 16250,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 16375,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 16700,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 16850,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 16850,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 17675,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 275
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 17675,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 275
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 18475,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 275
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 18475,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 275
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 19000,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 19000,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 19275,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 275
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 19275,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 275
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 20050,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 20050,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 20450,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 20850,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 425
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 21675,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 375
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 21675,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 375
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 22175,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 22450,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 675
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 22450,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 675
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 23250,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 425
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 23250,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 425
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 24000,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 500
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 24000,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 500
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 24825,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 325
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 25350,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 25350,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 25675,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 750
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 25675,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 750
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 26475,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 27000,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 27250,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 550
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 27250,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 550
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 28075,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 28600,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 28600,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 28875,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 28875,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 29675,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 29675,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 30425,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 30425,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 30875,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 30875,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 31075,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 31150,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 31500,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 31675,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 31875,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 31875,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 32275,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 32275,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 32450,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 32450,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 33675,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 33675,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 34025,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 34225,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 34325,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 34675,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 34750,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 34850,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 35075,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 35475,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 35700,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 35700,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 35850,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 125
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 36025,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 36250,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 36350,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 36450,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 36450,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 36650,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 36850,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 37275,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 325
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 37275,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 325
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 37650,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 37825,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 37950,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 38250,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 38250,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 38650,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 38850,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 39275,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 39475,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 39575,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 39650,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 39875,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 39875,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 40450,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 40650,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 40750,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 325
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 41150,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 41275,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 41500,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 41500,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 41850,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 42025,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 42150,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 42375,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 42625,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 42750,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 42850,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 43050,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 43275,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 43675,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 43900,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 43975,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 44275,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 44375,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 44475,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 150
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 44700,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 44775,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 45075,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 150
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 45275,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 45275,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 46450,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 46450,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 46875,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 47025,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 47150,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 47450,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 47625,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 47875,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 47950,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 48250,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 48475,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 48650,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 48875,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 49050,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 49150,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 49325,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 49450,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 49450,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 49675,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 50075,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 50150,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 50475,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 50650,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 50775,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 50875,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 51050,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 51475,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 51675,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 51675,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 52075,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 52275,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 52400,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 52500,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 52700,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 52700,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 53300,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 53450,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 53575,
-        "keyType": 3,
-        "noteType": 1,
-        "holdDuration": 150
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 53775,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 53875,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 54050,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 54275,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 54675,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 54925,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 55075,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 55150,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 55250,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 250
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 56075,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 56075,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 56625,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 56725,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 56900,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 56900,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 57475,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 57575,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 57675,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 57675,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 58275,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 58350,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 58450,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 175
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 58625,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 58875,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 59050,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 59275,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 59275,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": true
-    },
-    {
-      "data": {
-        "time": 59875,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 59950,
-        "keyType": 2,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 60075,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 60575,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 60675,
-        "keyType": 0,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 60850,
-        "keyType": 1,
-        "noteType": 1,
-        "holdDuration": 200
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 60850,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 61275,
-        "keyType": 1,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 61425,
-        "keyType": 3,
-        "noteType": 0,
-        "holdDuration": 0
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 61650,
-        "keyType": 0,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": false
-    },
-    {
-      "data": {
-        "time": 61650,
-        "keyType": 2,
-        "noteType": 1,
-        "holdDuration": 225
-      },
-      "hasPlayed": false
+      "time": 50,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 375
+    },
+    {
+      "time": 425,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 675,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 750,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1075,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1250,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1475,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1475,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 1800,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 2075,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 2075,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 2475,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 2575,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 2750,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 3050,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 3275,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 1125
+    },
+    {
+      "time": 3275,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 1125
+    },
+    {
+      "time": 4875,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 5450,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 5550,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 5650,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 5650,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 300
+    },
+    {
+      "time": 6225,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 6350,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 6450,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 6450,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 7000,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 7150,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 7275,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 7450,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 7600,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 7850,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 8050,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 8050,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 8625,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 8750,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 8850,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 8850,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 9450,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 9525,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 9625,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 375
+    },
+    {
+      "time": 10100,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 10225,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 10425,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 10425,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 11225,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 11225,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 11850,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 11950,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 12075,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 12075,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 12650,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 12750,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 12875,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 12875,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 13450,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 13550,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 13650,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 13825,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 14025,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 14250,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 14450,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 14450,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 15025,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 15150,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 15275,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 15275,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 15825,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 15950,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 16075,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 16075,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 16250,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 16375,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 16700,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 16850,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 16850,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 17675,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 17675,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 18475,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 18475,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 19000,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 19000,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 19275,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 19275,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 20050,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 20050,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 20450,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 20850,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 425
+    },
+    {
+      "time": 21675,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 375
+    },
+    {
+      "time": 21675,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 375
+    },
+    {
+      "time": 22175,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 22450,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 675
+    },
+    {
+      "time": 22450,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 675
+    },
+    {
+      "time": 23250,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 425
+    },
+    {
+      "time": 23250,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 425
+    },
+    {
+      "time": 24000,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 500
+    },
+    {
+      "time": 24000,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 500
+    },
+    {
+      "time": 24825,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 325
+    },
+    {
+      "time": 25350,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 25350,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 25675,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 750
+    },
+    {
+      "time": 25675,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 750
+    },
+    {
+      "time": 26475,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 27000,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 27250,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 550
+    },
+    {
+      "time": 27250,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 550
+    },
+    {
+      "time": 28075,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 28600,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 28600,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 28875,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 28875,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 29675,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 29675,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 30425,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 30425,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 30875,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 30875,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 31075,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 31150,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 31500,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 31675,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 31875,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 31875,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 32275,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 32275,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 32450,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 32450,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 33675,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 33675,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 34025,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 34225,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 34325,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 34675,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 34750,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 34850,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 35075,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 35475,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 35700,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 35700,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 35850,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 125
+    },
+    {
+      "time": 36025,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 36250,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 36350,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 36450,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 36450,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 36650,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 36850,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 37275,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 325
+    },
+    {
+      "time": 37275,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 325
+    },
+    {
+      "time": 37650,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 37825,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 37950,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 38250,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 38250,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 38650,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 38850,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 39275,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 39475,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 39575,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 39650,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 39875,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 39875,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 40450,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 40650,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 40750,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 325
+    },
+    {
+      "time": 41150,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 41275,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 41500,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 41500,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 41850,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 42025,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 42150,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 42375,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 42625,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 42750,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 42850,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 43050,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 43275,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 43675,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 43900,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 43975,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 44275,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 44375,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 44475,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 44700,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 44775,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 45075,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 45275,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 45275,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 46450,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 46450,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 46875,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 47025,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 47150,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 47450,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 47625,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 47875,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 47950,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 48250,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 48475,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 48650,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 48875,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 49050,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 49150,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 49325,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 49450,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 49450,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 49675,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 50075,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 50475,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 50650,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 50775,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 50875,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 51050,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 51475,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 51675,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 51675,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 52075,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 52275,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 52400,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 52500,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 52700,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 52700,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 53300,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 53450,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 53575,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 53775,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 53875,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 54050,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 54275,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 54675,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 54925,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 55075,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 55150,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 55250,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 56075,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 56075,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 56625,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 56725,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 56900,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 56900,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 57475,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 57575,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 57675,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 57675,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 58275,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 58350,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 58450,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 58625,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 58875,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 59050,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 59275,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 59275,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 59875,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 59950,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 60075,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 60575,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 60675,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 60850,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 60850,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 61275,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 61425,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 61650,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 61650,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 225
     }
   ]
 }

@@ -312,10 +312,11 @@ function keyPressed() {
     // Save JSON
     if (key === 's' || key === 'S') {
         editorNotes.sort((a, b) => a.data.time - b.data.time);
-        
+
+        let cleanNotes = editorNotes.map(note => note.data);
         let finalChart = {
             "metadata": { "bpm": bpm, "offset": offset },
-            "notes": editorNotes
+            "notes": cleanNotes // We save the newly extracted, clean array
         };
 
         saveJSON(finalChart, 'test.json');
