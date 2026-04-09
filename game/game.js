@@ -14,6 +14,7 @@ var right;
 var score = 0;
 var accuracyText = "";
 var timeElapsed = 0;
+var strokeThickness = 1;
 
 var canvasWidth;
 var canvasHeight;
@@ -95,6 +96,7 @@ class Key {
 
     drawKey() {
         stroke("#000");
+        strokeWeight(strokeThickness);
         fill(keyIsDown(this.key) ? this.clickFillCol : this.fillCol);
         rect(this.position[0] - this.diameter / 2, this.position[1], this.diameter, this.diameter, this.diameter);
     }
@@ -221,6 +223,7 @@ class Note {
         if (this.position[1] > canvasHeight && !this.isBeingHeld) return;
 
         stroke("#000");
+        strokeWeight(strokeThickness);
         fill("#fff");
         let drawY = this.position[1];
         let drawLen = this.noteLength;
@@ -316,6 +319,7 @@ function setup() {
         diam = 60;
         keyHeight = 60;
         speedMultiplier = 6;
+        strokeThickness = 2;
     } else if (chosenSong == "Signaling") {
         canvasWidth = 1280;
         canvasHeight = 720;
@@ -335,6 +339,7 @@ function setup() {
         diam = 70;
         keyHeight = 70;
         speedMultiplier = 4.25;
+        strokeThickness = 2;
     }
 
     var canvas = createCanvas(canvasWidth, canvasHeight);
@@ -383,6 +388,8 @@ function draw() {
             }
         }
     }
+
+    strokeWeight(1);
 
     textSize(19);
     textAlign(LEFT, TOP);
