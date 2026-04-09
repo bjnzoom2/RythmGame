@@ -1619,6 +1619,12 @@
       "holdDuration": 225
     },
     {
+      "time": 63275,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
       "time": 63825,
       "keyType": 2,
       "noteType": 0,
@@ -1667,6 +1673,12 @@
       "holdDuration": 0
     },
     {
+      "time": 65025,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
       "time": 65275,
       "keyType": 1,
       "noteType": 0,
@@ -1699,6 +1711,12 @@
     {
       "time": 66475,
       "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 66475,
+      "keyType": 3,
       "noteType": 1,
       "holdDuration": 250
     },
