@@ -86,7 +86,7 @@ function setup() {
         if (file) {
             const fileUrl = URL.createObjectURL(file);
             song = loadSound(fileUrl, () => {
-                song.playMode('sustain');
+                song.playMode('restart');
                 song.setVolume(0.4);
                 console.log("Song Loaded");
             });
