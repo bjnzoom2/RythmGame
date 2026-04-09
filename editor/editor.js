@@ -6,6 +6,16 @@ window.addEventListener('keydown', function(e) {
   }
 });
 
+class Note {
+    data;
+    hasPlayed = false;
+
+    constructor(data, hasPlayed) {
+        this.data = data;
+        this.hasPlayed = hasPlayed;
+    }
+}
+
 let song;
 let click;
 let bpm = 100;
@@ -69,8 +79,9 @@ function setup() {
         if (file) {
             file.text().then(text => {
                 let json = JSON.parse(text);
-                editorNotes = json.notes;
-                editorNotesClickSound = new Array(editorNotes.length).fill(false);
+                for (var i = 0; i < json.notes.length; i++) {
+                    editorNotes.push(new Note(json.notes[i], false));
+                }
                 console.log("Chart Loaded");
 
                 bpm = json.metadata.bpm;
@@ -157,9 +168,9 @@ function draw() {
     // 3. Draw Placed Notes
     for (let i = 0; i < editorNotes.length; i++) {
         let n = editorNotes[i];
-        let noteY = n.time * zoom;
-        let tailY = n.noteType === 1 ? (n.time + n.holdDuration) * zoom : noteY;
-        let noteX = cols[n.keyType];
+        let noteY = n.data.time * zoom;
+        let tailY = n.data.noteType === 1 ? (n.data.time + n.data.holdDuration) * zoom : noteY;
+        let noteX = cols[n.data.keyType];
 
         if (tailY < scrollY - 50 || noteY > scrollY + height + 50) {
             continue; 
@@ -167,7 +178,7 @@ function draw() {
         
         stroke(0);
         
-        if (n.noteType === 1) { // --- LONG NOTE ---
+        if (n.data.noteType === 1) { // --- LONG NOTE ---
             let len = tailY - noteY;
             
             // Draw the long body connecting the head and tail
@@ -190,14 +201,14 @@ function draw() {
     let playedClickThisFrame = false;
     for (var i = 0; i < editorNotes.length; i++) {
         var n = editorNotes[i];
-        if (chartTime >= n.time && !editorNotesClickSound[i]) {
+        if (chartTime >= n.data.time && !editorNotes[i].hasPlayed) {
             if (song.isPlaying() && !playedClickThisFrame) {
                 click.play();
                 playedClickThisFrame = true;
             }
-            editorNotesClickSound[i] = true;
-        } else if (chartTime < n.time) {
-            editorNotesClickSound[i] = false; 
+            editorNotes[i].hasPlayed = true;
+        } else if (chartTime < n.data.time) {
+            editorNotes[i].hasPlayed = false; 
         }
     }
     
@@ -233,16 +244,14 @@ function mousePressed() {
 
     if (keyType !== -1) {
         let exactTime = Math.floor(snappedTime);
-        let existingIndex = editorNotes.findIndex(n => n.time === exactTime && n.keyType === keyType);
+        let existingIndex = editorNotes.findIndex(n => n.data.time === exactTime && n.data.keyType === keyType);
         
         if (existingIndex > -1) {
             editorNotes.splice(existingIndex, 1); // Delete note
-            editorNotesClickSound.splice(existingIndex, 1);
         } else {
             // Create a new note and set it as the "dragging" target
-            let newNote = { "time": exactTime, "keyType": keyType, "noteType": 0, "holdDuration": 0 };
+            let newNote = new Note({ "time": exactTime, "keyType": keyType, "noteType": 0, "holdDuration": 0 }, false);
             editorNotes.push(newNote);
-            editorNotesClickSound.push(false);
             draggingNote = newNote; 
         }
     }
@@ -302,7 +311,7 @@ function keyPressed() {
 
     // Save JSON
     if (key === 's' || key === 'S') {
-        editorNotes.sort((a, b) => a.time - b.time);
+        editorNotes.sort((a, b) => a.data.time - b.data.time);
         
         let finalChart = {
             "metadata": { "bpm": bpm, "offset": offset },
