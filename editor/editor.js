@@ -264,14 +264,14 @@ function mouseDragged() {
         let msPerStep = msPerBeat / gridSnap;
         let currentSnappedTime = Math.round(((mouseY + scrollY) / zoom) / msPerStep) * msPerStep;
         
-        let duration = currentSnappedTime - draggingNote.time;
+        let duration = currentSnappedTime - draggingNote.data.time;
         
         if (duration >= msPerStep) {
-            draggingNote.noteType = 1; // Convert to Long Note
-            draggingNote.holdDuration = duration;
+            draggingNote.data.noteType = 1; // Convert to Long Note
+            draggingNote.data.holdDuration = duration;
         } else {
-            draggingNote.noteType = 0; // Convert back to Short Note if you drag back up
-            draggingNote.holdDuration = 0;
+            draggingNote.data.noteType = 0; // Convert back to Short Note if you drag back up
+            draggingNote.data.holdDuration = 0;
         }
     }
 }
