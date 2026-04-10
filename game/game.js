@@ -24,6 +24,11 @@ var downPosX;
 var upPosX;
 var rightPosX;
 
+var leftFillCol = "#fff";
+var downFillCol = "#fff";
+var upFillCol = "#fff";
+var rightFillCol = "#fff";
+
 var diam;
 var keyHeight;
 
@@ -99,12 +104,23 @@ class Key {
         let isDown = keyIsDown(this.key);
 
         let targetScale = isDown ? 0.95 : 1.0; 
-        this.currentScale = lerp(this.currentScale, targetScale, 0.4);
+        this.currentScale = lerp(this.currentScale, targetScale, 0.6);
 
         push();
         
         translate(this.position[0], this.position[1] + this.diameter / 2);
         scale(this.currentScale);
+
+        if (isDown) {
+            drawingContext.shadowBlur = 25;           // How wide the glow is
+            drawingContext.shadowColor = this.clickFillCol; // What color the glow is
+            stroke(this.clickFillCol);                     // Make the outline colored
+            strokeWeight(strokeThickness + 1);
+        } else {
+            drawingContext.shadowBlur = 0;            // Turn off glow
+            stroke("#000");                           // Default black outline
+            strokeWeight(strokeThickness);
+        }
 
         stroke("#000");
         strokeWeight(strokeThickness);
@@ -204,8 +220,7 @@ class Note {
 
     noteDamageType = 0;
 
-    constructor(fillCol, diameter, noteSpeed, spawnTime, noteKeyType, noteType, holdDuration = 0, noteDamageType) {
-        this.fillCol = fillCol;
+    constructor(diameter, noteSpeed, spawnTime, noteKeyType, noteType, holdDuration = 0, noteDamageType) {
         this.diameter = diameter;
         this.noteSpeed = noteSpeed;
         this.spawnTime = spawnTime;
@@ -217,15 +232,19 @@ class Note {
         switch (noteKeyType) {
             case 0:
                 this.position[0] = leftPosX;
+                this.fillCol = leftFillCol;
                 break;
             case 1:
                 this.position[0] = downPosX;
+                this.fillCol = downFillCol;
                 break;
             case 2:
                 this.position[0] = upPosX;
+                this.fillCol = upFillCol;
                 break;
             case 3:
                 this.position[0] = rightPosX;
+                this.fillCol = rightFillCol;
                 break;
             default:
                 console.log("Invalid Key Type");
@@ -237,7 +256,7 @@ class Note {
 
         stroke("#000");
         strokeWeight(strokeThickness);
-        fill("#fff");
+        fill(this.fillCol);
         let drawY = this.position[1];
         let drawLen = this.noteLength;
 
@@ -246,7 +265,7 @@ class Note {
             let songTime = timeElapsed - chart.metadata.offset;
             let msUntilTail = this.tailTime - songTime;
             
-            drawY = diam; // Pin the head to the receptor key
+            drawY = keyHeight; // Pin the head to the receptor key
             drawLen = msUntilTail * (this.noteSpeed / 1000); // Shrink the tail
             
             if (drawLen < diam) drawLen = diam; // Prevent reverse drawing
@@ -349,19 +368,24 @@ function setup() {
         upPosX = 686.668;
         rightPosX = 780.004;
 
-        diam = 70;
-        keyHeight = 70;
-        speedMultiplier = 4.25;
+        leftFillCol = "#647fe9";
+        downFillCol = "#ef338c";
+        upFillCol = "#647fe9";
+        rightFillCol = "#ef338c";
+
+        diam = 75;
+        keyHeight = 60;
+        speedMultiplier = 4.5;
         strokeThickness = 2;
     }
 
     var canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.class("canvas");
 
-    left = new Key("#bbb", "#fff", [leftPosX, keyHeight], diam, KeyTypes.LEFT);
-    down = new Key("#bbb", "#fff", [downPosX, keyHeight], diam, KeyTypes.DOWN);
-    up = new Key("#bbb", "#fff", [upPosX, keyHeight], diam, KeyTypes.UP);
-    right = new Key("#bbb", "#fff", [rightPosX, keyHeight], diam, KeyTypes.RIGHT);
+    left = new Key("#aaa", leftFillCol, [leftPosX, keyHeight], diam, KeyTypes.LEFT);
+    down = new Key("#aaa", downFillCol, [downPosX, keyHeight], diam, KeyTypes.DOWN);
+    up = new Key("#aaa", upFillCol, [upPosX, keyHeight], diam, KeyTypes.UP);
+    right = new Key("#aaa", rightFillCol, [rightPosX, keyHeight], diam, KeyTypes.RIGHT);
     keys.push(left, down, up, right);
     var speed = 100 / (60000 / chart.metadata.bpm) * speedMultiplier * 1000;
     for (var i = 0; i < chart.notes.length; i++) {
@@ -370,7 +394,7 @@ function setup() {
         var notetype = chart.notes[i].noteType;
         var holdDur = chart.notes[i].holdDuration;
 
-        var note = new Note("#fff", diam, speed, time, keytype, notetype, holdDur);
+        var note = new Note(diam, speed, time, keytype, notetype, holdDur);
         notes.push(note);
     }
 
