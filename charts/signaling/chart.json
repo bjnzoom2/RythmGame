@@ -2016,13 +2016,19 @@
     },
     {
       "time": 82875,
-      "keyType": 1,
+      "keyType": 2,
       "noteType": 1,
       "holdDuration": 200
     },
     {
       "time": 83075,
       "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 83075,
+      "keyType": 3,
       "noteType": 0,
       "holdDuration": 0
     },
