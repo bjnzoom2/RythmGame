@@ -80,6 +80,7 @@ class Key {
     keyType;
 
     isDownLastFrame = false;
+    currentScale = 1;
 
     constructor(fillCol, clickFillCol, position, diameter, keyType) {
         this.fillCol = fillCol;
@@ -95,10 +96,22 @@ class Key {
     }
 
     drawKey() {
+        let isDown = keyIsDown(this.key);
+
+        let targetScale = isDown ? 0.95 : 1.0; 
+        this.currentScale = lerp(this.currentScale, targetScale, 0.4);
+
+        push();
+        
+        translate(this.position[0], this.position[1] + this.diameter / 2);
+        scale(this.currentScale);
+
         stroke("#000");
         strokeWeight(strokeThickness);
-        fill(keyIsDown(this.key) ? this.clickFillCol : this.fillCol);
-        rect(this.position[0] - this.diameter / 2, this.position[1], this.diameter, this.diameter, this.diameter);
+        fill(isDown ? this.clickFillCol : this.fillCol);
+        rect(-this.diameter / 2, -this.diameter / 2, this.diameter, this.diameter, this.diameter);
+
+        pop();
     }
 
     update() {
