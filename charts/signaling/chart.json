@@ -2043,6 +2043,120 @@
       "keyType": 3,
       "noteType": 0,
       "holdDuration": 0
+    },
+    {
+      "time": 84850,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 84850,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 85225,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 85425,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 85550,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 85850,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 85950,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 86050,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 86250,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 86250,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 86675,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 86875,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 87050,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 87275,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 87425,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 87550,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 87650,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 87850,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 87950,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
     }
   ]
 }
