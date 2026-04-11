@@ -36,6 +36,7 @@ var keyHeight;
 var keys = [];
 var notes = [];
 var texts = [];
+var splashes = [];
 
 // Chart stuff
 var tetoPearChart;
@@ -104,7 +105,7 @@ class Key {
         let isDown = keyIsDown(this.key);
 
         let targetScale = isDown ? 0.95 : 1.0; 
-        this.currentScale = lerp(this.currentScale, targetScale, 0.6);
+        this.currentScale = lerp(this.currentScale, targetScale, 0.75);
 
         push();
         
@@ -114,11 +115,9 @@ class Key {
         if (isDown) {
             drawingContext.shadowBlur = 25;           // How wide the glow is
             drawingContext.shadowColor = this.clickFillCol; // What color the glow is
-            stroke(this.clickFillCol);                     // Make the outline colored
             strokeWeight(strokeThickness + 1);
         } else {
             drawingContext.shadowBlur = 0;            // Turn off glow
-            stroke("#000");                           // Default black outline
             strokeWeight(strokeThickness);
         }
 
@@ -146,8 +145,16 @@ class Key {
                         
                         if (d < (this.diameter / 2 + clickNote.diameter / 2 + 10)) {
                             // Score the Head hit
-                            if (d < 5) { texts.push(new AccuracyText("Perfect")); score += 50; }
-                            else if (d < 15) { texts.push(new AccuracyText("Great")); score += 40; }
+                            if (d < 5) {
+                                texts.push(new AccuracyText("Perfect"));
+                                score += 50; 
+                                //splashes.push(new NoteSplash(this.position, this.diameter, this.clickFillCol, 1));
+                            }
+                            else if (d < 15) {
+                                texts.push(new AccuracyText("Great"));
+                                score += 40;
+                                //splashes.push(new NoteSplash(this.position, this.diameter, this.clickFillCol, 1));
+                            }
                             else if (d < 30) { texts.push(new AccuracyText("Good")); score += 30; }
                             else if (d < 40) { texts.push(new AccuracyText("Ok")); score += 15; }
                             else { texts.push(new AccuracyText("Bad")); score += 5; }
@@ -168,7 +175,6 @@ class Key {
                 
                 if (clickNote.noteKeyType == this.keyType && clickNote.isBeingHeld) {
                     if (!currentlyDown) {
-                        // The player let go too early!
                         score -= 10;
                         notes.splice(i, 1);
                     } else if (songTime >= clickNote.tailTime) {
@@ -318,6 +324,49 @@ class AccuracyText {
     }
 }
 
+class NoteSplash {
+    position = [0, 0];
+    diameter = 1;
+    strokeCol = "#fff";
+    life = 1;
+    currentScale = 1;
+
+    constructor(position, diameter, strokeCol, life) {
+        this.position = position;
+        this.diameter = diameter;
+        this.hexCol = strokeCol;
+        this.strokeCol = color(strokeCol);
+        this.life = life;
+    }
+
+    drawSplash() {
+        if (this.life < 0) return;
+
+        push();
+
+        this.strokeCol.setAlpha(this.life * 255);
+
+        translate(this.position[0], this.position[1] + this.diameter / 2);
+        scale(this.currentScale);
+
+        drawingContext.shadowBlur = 40;
+        drawingContext.shadowColor = this.strokeCol.toString();
+
+        stroke(this.strokeCol);
+        strokeWeight(strokeThickness);
+        noFill();
+        //fill(this.strokeCol);
+        circle(0, 0, this.diameter);
+
+        pop();
+    }
+
+    update() {
+        this.life -= 1.25 * (deltaTime / 1000);
+        this.currentScale += 0.75 * (deltaTime / 1000)
+    }
+}
+
 function preload() {
     tetoPearChart = loadJSON('../charts/tetoPearCalc/chart.json'); 
     tetoPearSong = loadSound('../charts/tetoPearCalc/tetoPearCalc.mp3');
@@ -382,10 +431,10 @@ function setup() {
     var canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.class("canvas");
 
-    left = new Key("#aaa", leftFillCol, [leftPosX, keyHeight], diam, KeyTypes.LEFT);
-    down = new Key("#aaa", downFillCol, [downPosX, keyHeight], diam, KeyTypes.DOWN);
-    up = new Key("#aaa", upFillCol, [upPosX, keyHeight], diam, KeyTypes.UP);
-    right = new Key("#aaa", rightFillCol, [rightPosX, keyHeight], diam, KeyTypes.RIGHT);
+    left = new Key("#999", leftFillCol, [leftPosX, keyHeight], diam, KeyTypes.LEFT);
+    down = new Key("#999", downFillCol, [downPosX, keyHeight], diam, KeyTypes.DOWN);
+    up = new Key("#999", upFillCol, [upPosX, keyHeight], diam, KeyTypes.UP);
+    right = new Key("#999", rightFillCol, [rightPosX, keyHeight], diam, KeyTypes.RIGHT);
     keys.push(left, down, up, right);
     var speed = 100 / (60000 / chart.metadata.bpm) * speedMultiplier * 1000;
     for (var i = 0; i < chart.notes.length; i++) {
@@ -404,7 +453,7 @@ function setup() {
 }
 
 function draw() {
-    background("#fff");
+    background("#000");
 
     if (start && vid) {
         image(vid, 0, 0, canvasWidth, canvasHeight);
@@ -466,15 +515,19 @@ function draw() {
         keys[i].drawKey();
         keys[i].update();
     }
+    for (var i = 0; i < texts.length; i++) {
+        texts[i].drawText();
+        texts[i].update();
+    }
     if (!start) return;
     for (var i = 0; i < notes.length; i++) {
         notes[i].drawNote();
         notes[i].update();
     }
-    for (var i = 0; i < texts.length; i++) {
-        texts[i].drawText();
-        texts[i].update();
-    }
+    // for (var i = 0; i < splashes.length; i++) {
+    //     splashes[i].drawSplash();
+    //     splashes[i].update();
+    // }
 }
 
 function keyPressed() {
