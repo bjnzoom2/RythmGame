@@ -284,7 +284,7 @@ class Note {
         var songTime = timeElapsed - chart.metadata.offset;
         var msUntilHit = this.spawnTime - songTime;
         var speedPxMs = this.noteSpeed / 1000;
-        this.position[1] = diam + (msUntilHit * speedPxMs);
+        this.position[1] = keyHeight + (msUntilHit * speedPxMs);
 
         if (this.noteType === NoteTypes.LONG) {
             this.noteLength = (this.tailTime - this.spawnTime) * speedPxMs;
