@@ -3002,7 +3002,7 @@
       "time": 117250,
       "keyType": 0,
       "noteType": 1,
-      "holdDuration": 275
+      "holdDuration": 150
     },
     {
       "time": 117525,
@@ -3024,12 +3024,6 @@
     },
     {
       "time": 118075,
-      "keyType": 3,
-      "noteType": 0,
-      "holdDuration": 0
-    },
-    {
-      "time": 118075,
       "keyType": 1,
       "noteType": 0,
       "holdDuration": 0
@@ -3039,6 +3033,12 @@
       "keyType": 2,
       "noteType": 1,
       "holdDuration": 150
+    },
+    {
+      "time": 118225,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
     },
     {
       "time": 118750,
@@ -3113,12 +3113,6 @@
       "holdDuration": 0
     },
     {
-      "time": 120875,
-      "keyType": 2,
-      "noteType": 0,
-      "holdDuration": 0
-    },
-    {
       "time": 121125,
       "keyType": 1,
       "noteType": 0,
@@ -3137,6 +3131,12 @@
       "holdDuration": 275
     },
     {
+      "time": 121400,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
       "time": 121950,
       "keyType": 3,
       "noteType": 1,
@@ -3144,19 +3144,13 @@
     },
     {
       "time": 122200,
-      "keyType": 2,
-      "noteType": 0,
-      "holdDuration": 0
-    },
-    {
-      "time": 122475,
       "keyType": 0,
       "noteType": 0,
       "holdDuration": 0
     },
     {
       "time": 122475,
-      "keyType": 3,
+      "keyType": 2,
       "noteType": 1,
       "holdDuration": 250
     },
@@ -3168,15 +3162,123 @@
     },
     {
       "time": 123000,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 123000,
       "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 123275,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 250
+    },
+    {
+      "time": 123525,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 123675,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 123925,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 123925,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 124075,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 124200,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 124350,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 275
+    },
+    {
+      "time": 124625,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 225
+    },
+    {
+      "time": 125150,
+      "keyType": 2,
       "noteType": 1,
       "holdDuration": 200
     },
     {
-      "time": 123000,
-      "keyType": 2,
+      "time": 125150,
+      "keyType": 1,
       "noteType": 1,
       "holdDuration": 200
+    },
+    {
+      "time": 125425,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 125675,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 125675,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 125925,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 125925,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 126225,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 125
+    },
+    {
+      "time": 126225,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 125
     }
   ]
 }
