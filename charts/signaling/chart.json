@@ -3637,8 +3637,8 @@
     {
       "time": 138675,
       "keyType": 1,
-      "noteType": 1,
-      "holdDuration": 200
+      "noteType": 0,
+      "holdDuration": 0
     },
     {
       "time": 138875,
@@ -3761,12 +3761,6 @@
       "holdDuration": 125
     },
     {
-      "time": 143250,
-      "keyType": 0,
-      "noteType": 1,
-      "holdDuration": 125
-    },
-    {
       "time": 143450,
       "keyType": 3,
       "noteType": 0,
@@ -3795,6 +3789,114 @@
       "keyType": 3,
       "noteType": 0,
       "holdDuration": 0
+    },
+    {
+      "time": 144075,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 144475,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 325
+    },
+    {
+      "time": 144475,
+      "keyType": 3,
+      "noteType": 1,
+      "holdDuration": 325
+    },
+    {
+      "time": 144875,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 200
+    },
+    {
+      "time": 145075,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 145175,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 145275,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 145475,
+      "keyType": 0,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 145475,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 145875,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 145875,
+      "keyType": 2,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 146075,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 175
+    },
+    {
+      "time": 146500,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 146675,
+      "keyType": 3,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 146775,
+      "keyType": 1,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 146900,
+      "keyType": 2,
+      "noteType": 0,
+      "holdDuration": 0
+    },
+    {
+      "time": 147075,
+      "keyType": 1,
+      "noteType": 1,
+      "holdDuration": 150
+    },
+    {
+      "time": 147075,
+      "keyType": 0,
+      "noteType": 1,
+      "holdDuration": 150
     }
   ]
 }
