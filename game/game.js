@@ -48,6 +48,16 @@ var signalingSong;
 var signalingImg;
 var signalingVid;
 
+var executionClapChart;
+var executionClapSong;
+var executionClapImg;
+var executionClapVid;
+
+var shootingStarChart;
+var shootingStarSong;
+var shootingStarImg;
+var shootingStarVid;
+
 // Chosen chart
 var chosenSong;
 var chart;
@@ -376,8 +386,22 @@ function preload() {
     signalingSong = loadSound('../charts/signaling/signaling.mp3');
     signalingImg = loadImage('../charts/signaling/signaling.jpg');
 
+    executionClapChart = loadJSON('../charts/executionClap/chart.json'); 
+    executionClapSong = loadSound('../charts/executionClap/executionClap.mp3');
+    executionClapImg = loadImage('../charts/executionClap/executionClap.jpg');
+
+    shootingStarChart = loadJSON('../charts/shootingStar/chart.json');
+    shootingStarSong = loadSound('../charts/shootingStar/shootingStar.mp3');
+    shootingStarImg = loadImage('../charts/shootingStar/shootingStar.jpg');
+
     signalingVid = createVideo('../charts/signaling/signaling.mp4');
     signalingVid.hide();
+
+    executionClapVid = createVideo('../charts/executionClap/executionClap.mp4');
+    executionClapVid.hide();
+
+    shootingStarVid = createVideo('../charts/shootingStar/shootingStar.mp4');
+    shootingStarVid.hide();
 }
 
 function setup() {
@@ -421,6 +445,56 @@ function setup() {
         downFillCol = "#ef338c";
         upFillCol = "#647fe9";
         rightFillCol = "#ef338c";
+
+        diam = 75;
+        keyHeight = 60;
+        speedMultiplier = 4.5;
+        strokeThickness = 2;
+    } else if (chosenSong == "Execution Clap") {
+        canvasWidth = 1280;
+        canvasHeight = 720;
+
+        chart = executionClapChart;
+        song = executionClapSong;
+        img = executionClapImg;
+        vid = executionClapVid;
+
+        vid.volume(0);
+
+        leftPosX = 499.996;
+        downPosX = 593.332;
+        upPosX = 686.668;
+        rightPosX = 780.004;
+
+        leftFillCol = "#fff";
+        downFillCol = "#fff";
+        upFillCol = "#fff";
+        rightFillCol = "#fff";
+
+        diam = 75;
+        keyHeight = 60;
+        speedMultiplier = 4.5;
+        strokeThickness = 2;
+    } else if (chosenSong == "Shooting Star") {
+        canvasWidth = 1280;
+        canvasHeight = 720;
+
+        chart = shootingStarChart;
+        song = shootingStarSong;
+        img = shootingStarImg;
+        vid = shootingStarVid;
+
+        vid.volume(0);
+
+        leftPosX = 499.996;
+        downPosX = 593.332;
+        upPosX = 686.668;
+        rightPosX = 780.004;
+
+        leftFillCol = "#fff";
+        downFillCol = "#fff";
+        upFillCol = "#fff";
+        rightFillCol = "#fff";
 
         diam = 75;
         keyHeight = 60;
